@@ -18,6 +18,10 @@ def sumList(numList):
     return sumOfList
 
 
+def reverseList(numList):
+    return numList[::-1]
+
+
 
 if __name__ == '__main__':
     print("Enter a String of numbers that you want to add together and multiply by a comma (,):")
@@ -27,4 +31,5 @@ if __name__ == '__main__':
     numList = [int(i) for i in numList]
     print(sumList(numList))
     print(productList(numList))
+    # print(f"The reverse of {numList} is {reverseList(numList)}")
 
