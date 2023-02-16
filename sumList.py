@@ -1,8 +1,3 @@
-def sumList(numList):
-    sumOfList = 0
-    for i in numList:
-        sumOfList += i
-    return sumOfList
 
 def productList(numList):
     if len(numList) == 0:
@@ -15,7 +10,21 @@ def productList(numList):
             productOfList *= i
         return productOfList
 
-testList = [ 1, 2 ,3 ,4 ,5]
 
-print(productList(testList))
+def sumList(numList):
+    sumOfList = 0
+    for i in numList:
+        sumOfList += i
+    return sumOfList
+
+
+
+if __name__ == '__main__':
+    print("Enter a String of numbers that you want to add together and multiply by a comma (,):")
+
+    userInput = input()
+    numList = userInput.split(',')
+    numList = [int(i) for i in numList]
+    print(sumList(numList))
+    print(productList(numList))
 
