@@ -31,5 +31,6 @@ if __name__ == '__main__':
     numList = [int(i) for i in numList]
     print(sumList(numList))
     print(productList(numList))
-    # print(f"The reverse of {numList} is {reverseList(numList)}")
+    print(f"The reverse of {numList} is {reverseList(numList)}")
+
 
